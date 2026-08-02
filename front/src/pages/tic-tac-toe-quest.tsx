@@ -1,7 +1,7 @@
 import { lazy, Suspense, useState } from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import { ButtonBack, SuspenseFallback } from '@/shared';
-import prize from '../assets/prize.png';
+import prize from '../assets/prize.webp';
 
 const TikTakToe = lazy(() => import('../widgets/tik-tak-toe').then(module => ({ default: module.TikTakToe })));
 

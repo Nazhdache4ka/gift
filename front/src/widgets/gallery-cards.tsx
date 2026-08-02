@@ -2,11 +2,21 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import { Box, Grid, useMediaQuery } from '@mui/material';
 import { GalleryModal } from './gallery-modal';
-import smile from '../assets/gallery/smile.jpeg';
+import smile from '../assets/gallery/smile.webp';
 import newYear from '../assets/gallery/newyear.mp4';
-import fck from '../assets/gallery/fck.jpeg';
-import hiddenImage from '../assets/gallery/gift.png';
+import fck from '../assets/gallery/fck.webp';
+import hiddenImage from '../assets/gallery/gift.webp';
 import dance from '../assets/dance.webp';
+import burger from '../assets/gallery/burger.webp';
+import dauni from '../assets/gallery/dauni.webp';
+import ezhi from '../assets/gallery/ezhi.webp';
+import fck2 from '../assets/gallery/fck2.webp';
+import fight from '../assets/gallery/fight.webp';
+import jinglebells from '../assets/gallery/jinglebells.webp';
+import lox from '../assets/gallery/lox.mp4';
+import omg from '../assets/gallery/omg.webp';
+import shapka from '../assets/gallery/shapka.mp4';
+import sobaki from '../assets/gallery/sobaki.mp4';
 
 const mediaSx = {
   display: 'block',
@@ -222,6 +232,13 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = [
   {
+    id: 0,
+    component: 'img',
+    src: omg,
+    objectFit: 'cover',
+    modalText: 'Там нюдсы, лучше подумай прежде чем открыть'
+  },
+  {
     id: 1,
     component: 'img',
     src: fck,
@@ -249,4 +266,67 @@ const galleryItems: GalleryItem[] = [
     objectFit: 'cover',
     modalText: 'Если что, там просто бешеный кабанидзе😱',
   },
+  {
+    id: 5,
+    component: 'img',
+    src: jinglebells,
+    objectFit: 'cover',
+    modalText: 'А тут дикие красавчики',
+  },
+  {
+    id: 6,
+    component: 'img',
+    src: dauni,
+    objectFit: 'cover',
+    modalText: 'На фото два дауна и один умни чел, кто кто сама угадай',
+  },
+  {
+    id: 7,
+    component: 'img',
+    src: ezhi,
+    objectFit: 'cover',
+    modalText: 'Я может и не может но хотя бы не я✊',
+  },
+  {
+    id: 8,
+    component: 'img',
+    src: fck2,
+    objectFit: 'cover',
+    modalText: 'Тут кстати опять пруф непорядочности',
+  },
+  {
+    id: 9,
+    component: 'img',
+    src: fight,
+    objectFit: 'cover',
+    modalText: 'Левой чистоту - правой суету',
+  },
+  {
+    id: 10,
+    component: 'video',
+    src: lox,
+    objectFit: 'cover',
+    modalText: 'На видео кибербуллинг',
+  },
+  {
+    id: 11,
+    component: 'img',
+    src: burger,
+    objectFit: 'cover',
+    modalText: 'Тут тупа мем хихи-хаха',
+  },
+  {
+    id: 12,
+    component: 'video',
+    src: sobaki,
+    objectFit: 'cover',
+    modalText: 'Честно, я ничего смешнее не видел',
+  },
+  {
+    id: 13,
+    component: 'video',
+    src: shapka,
+    objectFit: 'cover',
+    modalText: 'А тут воришка убегает',
+  }
 ];

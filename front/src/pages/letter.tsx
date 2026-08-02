@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
 import { Avatar, Box, ButtonBase, Container, Paper, Typography, useMediaQuery } from '@mui/material';
 import { ButtonBack } from '@/shared';
-import envelope from '../assets/envelope.png';
+import envelope from '../assets/envelope.webp';
 import poganets from '../assets/poganets.webp';
 import kaban from '../assets/kaban.webp';
 
